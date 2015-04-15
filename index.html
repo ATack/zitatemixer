@@ -24,44 +24,17 @@
                         <br>
                         <br>
                         <a class="btn btn-danger btn-lg" onclick="getZitat()">neu Mixen</a>
+                        <hr>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a href="https://twitter.com/home?status=Der Zitatemixer http://www.achim-tack.de/projexts/zitatemixer/index.html by @A_Tack"
+                        target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-warning"></i></a>
+                        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.achim-tack.de%2Fprojects%2Fzitateschleuder%2Findex.html&amp;t=Zitateschleuder"><i class="fa fa-3x fa-facebook fa-fw text-warning"></i></a>
+                        <a href="https://github.com/ATack/zitatemixer"><i class="fa fa-3x fa-fw fa-github text-warning"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="section section-danger">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Idee</h3>
-                        <p contenteditable="true">Die Idee zu dieser kleinen Seite kam mir beim Hören des wunderbaren Känguruh
-                            Manifests von Marc-Uwe Kling, welches besonders als Hörbuch zu empfehlen
-                            ist.</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="text-info text-right">
-                            <br>
-                            <br>
-                        </p>
-                        <div class="row">
-                            <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
-                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hidden-xs text-right">
-                                <a href="https://twitter.com/home?status=Der Zitatemixer http://www.achim-tack.de/projexts/zitatemixer/index.html by @A_Tack"
-                                target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-warning"></i></a>
-                                <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.achim-tack.de%2Fprojects%2Fzitateschleuder%2Findex.html&amp;t=Zitateschleuder"><i class="fa fa-3x fa-facebook fa-fw text-warning"></i></a>
-                                <a href="http://www.spiegel.de"><i class="fa fa-3x fa-fw fa-github text-warning"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <script>
             function getZitat() {
             
@@ -84,7 +57,11 @@
 							  "There's no busines like Showbusiness",
 							  "Nichts ist mächtiger als eine Idee, deren Zeit gekommen ist.",
 							  "Yes we can!",
-							  "Die Rente ist sicher!"]
+							  "Die Rente ist sicher!",
+							  "Auch aus Steinen, die in den Weg gelegt werden, kann man Schönes bauen.",
+							  "Ehrlich währt am längste. Aber wer hat schon so viel Zeit?",
+							  "Ein Lächeln ist oft das Wesentliche.",
+							  "Die gefährlichste Weltanschauung ist die Weltanschauung derer, die die Welt nie angeschaut haben."]
             
             	var gewZitat = Zitate[Math.floor(Math.random()*Zitate.length)];
 				var gewZitat = '"' + gewZitat + '"'
@@ -105,7 +82,10 @@
 							   "Silvio Berlusconi",
 							   "Heidi Klum",
 							   "Bob der Baumeister",
-							   "Edward Snowden"
+							   "Edward Snowden",
+							   "Albert Einstein",
+							   "Alexander von Humboldt",
+							   "Kim Kardashian"
                                ]
                 
                 var gewAutor = Autoren[Math.floor(Math.random()*Autoren.length)];
