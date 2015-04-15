@@ -65,7 +65,7 @@
 							  "Sagen, was ist.",
 							  "Houston, wir haben ein Problem."]
             
-            	var gewZitat = Zitate[Math.floor(Math.random()*Zitate.length)];
+            	var gewZitat = Zitate[Math.floor(Math.random()*Zitate.length)+1];
 				var gewZitat = '"' + gewZitat + '"'
               
                 var Autoren = ["Josef Stalin",
@@ -92,7 +92,7 @@
 							   "Barack Obama"
                                ]
                 
-                var gewAutor = Autoren[Math.floor(Math.random()*Autoren.length)];
+                var gewAutor = Autoren[Math.floor(Math.random()*Autoren.length)+1];
 				var gewAutor = '- ' + gewAutor + ' -'
                   
               document.getElementById("zitat").innerHTML = gewZitat;
