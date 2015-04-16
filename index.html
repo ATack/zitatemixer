@@ -27,9 +27,9 @@
                         <hr>
                     </div>
                     <div class="col-md-12 text-center">
-                        <a href="https://twitter.com/home?status=Wer hat's gesagt? http://bit.ly/1Di3BNj by @A_Tack"
-                        target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-warning"></i></a>
-                        <a href="https://github.com/ATack/zitatemixer"><i class="fa fa-3x fa-fw fa-github text-warning"></i></a>
+						<div id="twitter"> Test <i class="fa fa-3x fa-fw fa-twitter text-warning"></i></div>
+						<div id = "github"><a href="https://github.com/ATack/zitatemixer" target="_blank"><i class="fa fa-3x fa-fw fa-github text-warning"></i></a>
+						</div>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,9 @@
 							  "Houston, wir haben ein Problem."]
             
             	var gewZitat = Zitate[Math.floor(Math.random()*Zitate.length)+1];
-				var gewZitat = '"' + gewZitat + '"'
-              
+				var gewZitat_ohne_striche = gewZitat ;
+				var gewZitat = '"' + gewZitat + '"' ;
+				
                 var Autoren = ["Josef Stalin",
                                "Günter Netzer",
                                "Günter Wallraff",
@@ -93,11 +94,16 @@
                                ]
                 
                 var gewAutor = Autoren[Math.floor(Math.random()*Autoren.length)+1];
-				var gewAutor = '- ' + gewAutor + ' -'
-                  
+				var gewAutor_ohne_striche = gewAutor ;
+				var gewAutor = '- ' + gewAutor + ' -';
+				
+		        var tweet = '<a href = "https://twitter.com/home?status=' + gewAutor_ohne_striche + ': ' + gewZitat_ohne_striche +' http://atack.github.io/zitatemixer/ by @A_Tack" target="_blank"><i class="fa fa-3x fa-fw fa-twitter text-warning"></i></a>'
+				 
               document.getElementById("zitat").innerHTML = gewZitat;
               document.getElementById("autor").innerHTML = gewAutor;
+			  document.getElementById("twitter").outerHTML = tweet;
             }
+			
         </script>
     </body>
 
